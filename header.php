@@ -68,6 +68,25 @@ if(isset($_SESSION['FOOD_USER_ID'])){
         .header-bottom.transparent-bar.black-bg.stick{
                  background-color: antiquewhite;
         }
+        .btn {
+           border: 2px solid black;
+           background-color: white;
+           color: black;
+           padding: 14px 28px;
+           font-size: 16px;
+           cursor: pointer;
+        }
+        .info{
+            border-color: #2196F3;
+            color: doderblue;
+        }
+        .info:hover {
+            background: #2196F3;
+            color: white;
+        }
+        .default:hover{
+            background: #e7e7e7;
+        }
     </style>
     </head>
     <body>
@@ -202,10 +221,10 @@ if(isset($_SESSION['FOOD_USER_ID'])){
                 </div>
             </div>
             <div class="header-bottom transparent-bar black-bg">
-                <div class="container">
+                <div class="container" style="padding:0px;">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-12">
-                            <div class="main-menu">
+                            <div class="main-menu">  
                                 <nav>
                                     <ul>
                                         <li><a href="<?php echo FRONT_SITE_PATH?>shop">Shop</a></li>
